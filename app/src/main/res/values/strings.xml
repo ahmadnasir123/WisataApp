@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">WisataAppFinal</string>
+    <string name="wisata_name">Wisata Name</string>
+    <string name="desc">Description</string>
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+    <string name="share">Share</string>
+    <string name="nama_about">Ahmad Nasir</string>
+    <string name="email_about">nasirahmad240502@gmail.com</string>
+    <string name="wisata_image">Image Wisata</string>
+    <string name="splash_name">WisataDex</string>
+    <string name="height_weight">Height / Weight :</string>
+    <string name="scroll_to_top">Scroll to Top</string>
+    <string name="search_wisata">Search Wisata!</string>
+
+    <string name="menu_home">Home</string>
+    <string name="about_page">About Page</string>
+    <string name="back">Back</string>
+    <string name="favorite">Favorite</string>
+</resources>
