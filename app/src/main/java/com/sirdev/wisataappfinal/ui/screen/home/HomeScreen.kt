@@ -38,7 +38,12 @@ fun HomeScreen(
                     navigateToDetail = navigateToDetail
                 )
             }
-            is UiState.Error -> {}
+            is UiState.Error -> {
+                // Handle error state here
+                val error = uiState.errorMessage
+                // Display an error message or perform any other actions
+                // based on the error state
+            }
         }
     }
 }

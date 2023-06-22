@@ -11,6 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
@@ -31,7 +32,7 @@ fun WisataListItem(
         ) {
             AsyncImage(
                 model = photoUrl,
-                contentDescription = "Photo Wisata",
+                contentDescription = stringResource(R.string.photo_wisata),
                 contentScale = ContentScale.Crop,
                 placeholder = painterResource(id = R.drawable.placeholder),
                 modifier = Modifier

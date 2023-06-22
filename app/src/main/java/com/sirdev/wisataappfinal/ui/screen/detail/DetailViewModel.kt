@@ -18,6 +18,7 @@ class DetailViewModel(private val repository: Repository): ViewModel() {
         viewModelScope.launch {
             _uiState.value = UiState.Loading
             _uiState.value = UiState.Success(repository.getOrderById(wisataId))
+
         }
     }
 }

@@ -34,7 +34,7 @@ fun AboutPageScreen(
             .fillMaxWidth()) {
         Image(
             painter = painterResource(id = R.drawable.nasir),
-            contentDescription = "Photo Ahmad Nasir",
+            contentDescription = stringResource(R.string.photo_nasir),
             contentScale = ContentScale.Crop,
             modifier = modifier
                 .padding(32.dp)

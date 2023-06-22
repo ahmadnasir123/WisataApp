@@ -15,9 +15,8 @@ class Repository {
             }
         }
     }
-    fun getWisata(): Flow<MutableList<OrderWisata>> {
-        return flowOf(wisatan)
-    }
+    fun getWisata(): Flow<MutableList<OrderWisata>> = flowOf(wisatan)
+
 
 
     fun getOrderById(wisataId: Long): OrderWisata {

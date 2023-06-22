@@ -50,10 +50,16 @@ fun DetailScreen(
                     onBackClick = navigateBack,
                 )
             }
-            is UiState.Error -> {}
+            is UiState.Error -> {
+                // Handle error state here
+                val error = uiState.errorMessage
+                // Display an error message or perform any other actions
+                // based on the error state
+            }
         }
     }
 }
+
 
 
 @Composable
@@ -71,7 +77,7 @@ fun DetailContent(
             Box{
                 AsyncImage(
                     model = data.photo,
-                    contentDescription = "Photo Wisata",
+                    contentDescription = stringResource(R.string.photo_wisata),
                     contentScale = ContentScale.Crop,
                     placeholder = painterResource(id = R.drawable.placeholder),
                     modifier = modifier

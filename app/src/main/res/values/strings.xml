@@ -17,4 +17,8 @@
     <string name="about_page">About Page</string>
     <string name="back">Back</string>
     <string name="favorite">Favorite</string>
+    <string name="scroll">Scroll To Top</string>
+    <string name="logo">logo</string>
+    <string name="photo_wisata">Photo Wisata</string>
+    <string name="photo_nasir">Photo Ahmad Nasir</string>
 </resources>

@@ -12,12 +12,14 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.sirdev.wisataappfinal.R
 
 @Composable
 fun TopHomeBar(
-    topBarState: MutableState<Boolean>
+    topBarState: MutableState<Boolean>,
+    modifier: Modifier = Modifier
 ) {
     AnimatedVisibility(
         visible = topBarState.value,
@@ -28,7 +30,7 @@ fun TopHomeBar(
                 title = {
                     Image(
                         painter = painterResource(id = R.drawable.logo),
-                        contentDescription = "logo",
+                        contentDescription = stringResource(R.string.logo),
                         modifier = Modifier
                             .height(180.dp)
                             .width(120.dp)
@@ -36,7 +38,8 @@ fun TopHomeBar(
                 },
                 backgroundColor = MaterialTheme.colors.primary,
                 contentColor = Color.White,
-                elevation = 10.dp
+                elevation = 10.dp,
+                modifier = modifier
             )
         }
     )
